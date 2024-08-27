@@ -51,6 +51,17 @@ function App() {
         <img src={mc2Image} alt="MC2 Data Model" style={{ width: '50%', height: 'auto' }} />
       </div>
 
+      {/* Embedding the iframe */}
+      <div className="iframe-container">
+        <iframe
+          src="https://mc2-center.github.io/schema_visualization/"
+          title="Schema Visualization"
+          width="100%"
+          height="500px"
+          style={{ border: 'none' }}
+        />
+      </div>
+
       {/* Contribute Comments Table */}
       <div className="table-container">
         <div className="table-header" onClick={() => setShowCommentHelp(!showCommentHelp)}>
